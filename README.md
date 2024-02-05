@@ -17,13 +17,13 @@
   - It requires clean code and intention as it bypasses PR and code review
   - The concept is the "Bridge" should be highly isolated and not touch anything that other feature development may overwrite
 - The Actions work two-fold:
-  1. [auto_merge_bridge_to_main.yaml](...) On push to designated "Bridge-Branch, automatically merged to `main`
-  2. [auto_sync_main_to_bridge.yaml](...) On any merge into `main`, changes are merged into "Bridge-Branch" to ensure no merge conflicts when the other Action fires
+  1. [auto_merge_bridge_to_main.yaml](https://github.com/colinwilliams91/helpful-gh-automations/actions/workflows/auto_merge_bridge_to_main.yaml) On push to designated "Bridge-Branch, automatically merged to `main`
+  2. [auto_sync_main_to_bridge.yaml](https://github.com/colinwilliams91/helpful-gh-automations/actions/workflows/auto_sync_main_to_bridge.yaml) On any merge into `main`, changes are merged into "Bridge-Branch" to ensure no merge conflicts when the other Action fires
 
 ## How to Use:
 - Create a branch parallel to `main` (like a `development` or `staging` branch) (this will be your "Bridge-Branch") on the remote
-- Plug the name of that branch into the places where `your-bridge-branch` exists in the [auto_merge_bridge_to_main.yaml](...) file
-- Plug the name of that branch into the places where `your-bridge-branch` exists in the [auto_sync_main_to_bridge.yaml](...) file
+- Plug the name of that branch into the places where `your-bridge-branch` exists in the [auto_merge_bridge_to_main.yaml](https://github.com/colinwilliams91/helpful-gh-automations/blob/main/.github/workflows/auto_merge_bridge_to_main.yaml) file
+- Plug the name of that branch into the places where `your-bridge-branch` exists in the [auto_sync_main_to_bridge.yaml](https://github.com/colinwilliams91/helpful-gh-automations/blob/main/.github/workflows/auto_sync_main_to_bridge.yaml) file
 
 ## Test:
 - Create a new feature branch
