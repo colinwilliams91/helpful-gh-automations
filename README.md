@@ -21,6 +21,11 @@
   2. [auto_sync_main_to_bridge.yaml](https://github.com/colinwilliams91/helpful-gh-automations/actions/workflows/auto_sync_main_to_bridge.yaml) On any merge into `main`, changes are merged into "Bridge-Branch" to ensure no merge conflicts when the other Action fires
 
 ## How to Use:
+- Bootstrap a repository from this template OR create a `.github/workflows` directory in your project root and copy/paste the two files I list below into it.
+- Navigate to your projects "Settings" view on Github
+- Click the "Actions" dropdown-section in the left-side toolbar
+- Scroll to "Workflow permissions" and toggle "Read and write permissions" and "Allow GitHub Actions to create and approve pull requests"
+  - You may need to perform this in the "Organization Settings" level above your repository if it is inside of one to establish default permissions across the group's repositories first
 - Create a branch parallel to `main` (like a `development` or `staging` branch) (this will be your "Bridge-Branch") on the remote
 - Plug the name of that branch into the places where `your-bridge-branch` exists in the [auto_merge_bridge_to_main.yaml](https://github.com/colinwilliams91/helpful-gh-automations/blob/main/.github/workflows/auto_merge_bridge_to_main.yaml) file
 - Plug the name of that branch into the places where `your-bridge-branch` exists in the [auto_sync_main_to_bridge.yaml](https://github.com/colinwilliams91/helpful-gh-automations/blob/main/.github/workflows/auto_sync_main_to_bridge.yaml) file
