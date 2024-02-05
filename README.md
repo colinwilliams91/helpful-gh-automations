@@ -13,7 +13,7 @@
 
 ## Actions:
 - This repository implements a strategy I developed for a "Bridge Branch"
-- The purpose of this "Bridge Branch" is to act as an intermediary between feature development and `main`
+- The purpose of this "Bridge-Branch" is to act as an intermediary between feature development and `main`
   - It requires clean code and intention as it bypasses PR and code review
   - The concept is the "Bridge" should be highly isolated and not touch anything that other feature development may overwrite
 - The Actions work two-fold:
