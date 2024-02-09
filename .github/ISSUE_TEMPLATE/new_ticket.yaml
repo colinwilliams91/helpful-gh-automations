@@ -1,8 +1,5 @@
 name: "\U0001F4A1 New Ticket"
 description: Suggest a new task
-branding:
-  icon: "plus-circle"
-  color: "white"
 
 title: 'your-issue'
 
