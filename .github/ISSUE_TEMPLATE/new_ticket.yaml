@@ -19,12 +19,6 @@ body:
       required: true
 
   - type: textarea
-    id: references
-    attributes:
-      label: '<h2>References</h2>'
-      description: Please provide any **SCREENSHOTS**, **CODE SNIPPETS** or **LINKS** to the codebase or documentation which will help implement a solution.
-
-  - type: textarea
     id: solution
     attributes:
       label: '<h2>Describe the Proposed Solution</h2>'
@@ -32,3 +26,9 @@ body:
       placeholder: Implementing x, y, & z will...
     validations:
       required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: '<h2>References</h2>'
+      description: Please provide any **SCREENSHOTS**, **CODE SNIPPETS** or **LINKS** to the codebase or documentation which will help implement a solution.
